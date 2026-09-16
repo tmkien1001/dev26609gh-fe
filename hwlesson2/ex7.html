@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="8" align="center" bgcolor="bisque">
+        <thead>
+            <tr>
+                <th colspan="2" style="color:blue">
+                    Đăng kí du lịch
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td bgcolor="bisque" style="color:blue"><label for="hovaten">Họ và tên</label></td>
+                <td><input name="hovaten" id="hovaten" type="text" required placeholder="nhập tên" size="25" value="Pham Ngoc Cam Dao"></td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    <label for="diachi">Địa chỉ</label>
+                </td>
+                <td>
+                    <input type="text" name="diachi" id="diachi" required placeholder="Nhập địa chỉ" value="227 nguyễn văn cừ" size="25">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    <label for="dienthoai">Điện thoại</label>
+                </td>
+                <td>
+                    <input type="number" name="diachi" id="diachi" required placeholder="Nhập địa chỉ" size="25" value="09876555">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="khach" style="color:blue">Khách Việt Nam</label>
+
+                </td>
+                <td>
+                    <input type="checkbox" name="khach" id="khach" required>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    <label for="chontour">Chọn tour</label>
+                </td>
+                <td>
+                    <select name="chontour" id="chontour">
+                        <option selected>Buôn Mê Thuật- Gia Lai-Kon Tum </option>
+                        <option>Hanoi</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="color:blue">
+                    <label>Phương tiện</label>
+                </td>
+           
+                <td>
+                    <label for="xemay">Xe máy</label>
+                </td>
+                <td>
+                    <input type="radio" name="phuongtien" id="phuongtien" required size="25">
+                </td>
+                <td>
+                    <label for="oto">Xe oto</label>
+                </td>
+                <td>
+                    <input type="radio" name="ôt" id="oto" required size="25">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
