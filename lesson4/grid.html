@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout">
+        <header class="header">Header</header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">Content</main>
+        <footer class="footer">Footer</footer>
+    </div>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            grid-template-rows: 70px 1fr 60px;
+            grid-template-areas: "header header"
+            "sidebar content"
+            "footer footer";
+            gap:12px;
+            min-height: calc(100vh-24px)
+        }
+        .header{ grid-area: header; background: #dff3ff;}
+        .sidebar{ grid-area: sidebar; background: #dff3ff;}
+        .content{ grid-area: content; background: #dff3ff;}
+        .footer{ grid-area: footer; background: #dff3ff;}
+    </style>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<body>
+    <head>
+
+    </head>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">LOGO</a>
+
+        </div>
+        <ul class="menu">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href=""> Sản phẩm</a></li>
+            <li><a href=""> Dịch vụ</a></li>
+            <li><a href="">Liên hệ</a></li>
+
+        </ul>
+        <div class="action">
+            <button>Đăng  nhập</button>
+        </div>
+    </nav>
+    <h1>
+        CSS GRID LAYOUT
+    </h1>
+    <hr>
+    <div class="prd">
+        <div class="card">Sp 1</div>
+        <div class="card">Sp 2</div>
+        <div class="card">Sp 3</div>
+        <div class="card">Sp 4</div>
+        <div class="card">Sp 5</div>
+        <div class="card">Sp 6</div>
+
+    </div>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 40px;
+            height: 70;
+            background: #111;
+            color:whitesmoke;
+        }
+        .menu{
+            display:flex;
+            gap:30px;
+            list-style:none;
+        }
+        .menu a{
+            text-decoration: none;
+            color:white;
+            transition: 0.3s;
+
+        }
+        .menu a:hover{
+            color: #05a742;
+
+        }
+        button{
+            padding: 8px 16px;
+            border:none;
+            background: #05a742;
+            color:white;
+            cursor: pointer;
+        }
+        .prd{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .card{
+            background: #06b35a;
+            padding: 1rem;
+            border-radius: .5rem;
+            text-align:center;
+            color:antiquewhite
+
+        }
+    </style>
+</body>
+</html>
