@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:rgba(149, 212, 217, 0.612);
+        }
+        h1{
+            position: relative;
+            text-decoration: none;
+            cursor:pointer;
+            padding:10px
+        }
+        h1::after{
+            content:"";
+            position: absolute;
+            left:0;
+            bottom:0;
+            width:0;
+            height:3px;
+            background:green;
+            transition: width 0.3s;
+        }
+        h1:hover::after{
+            width:20%
+        }
+        img{
+            width:50%;
+            padding:10px
+
+        }
+    </style>
+</head>
+<body>
+    <h1>TIN TỨC</h1>
+    <img  src="https://img5.thuthuatphanmem.vn/uploads/2021/12/16/anh-nen-dung-cu-thi-nghiem-hoa-hoc_093816882.jpg" title="Chế phẩm hóa học là gì? Và những điều cần lưu ý khi">
+    
+    <h2>Chế phẩm hóa học là gì? Và những điều cần lưu ý khi</h2>
+    <div class="time" > 06/06/2019</div>
+    <p>Chế phẩm hóa học là những hóa chất kết hợp với nhau theo tỷ lệ nhất định, tuy trong quá trình sản xuất các chế phẩm hóa học đã được giảm thiểu tối đa về độ độc hại của chúng, nhưng khi đã là chất hóa học thì không thể nào đưa độ độc hại về mức 0.</p>
+</body>
+</html>

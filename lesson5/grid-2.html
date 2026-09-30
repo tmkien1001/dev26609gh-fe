@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .card{
+            background-color: green;
+            padding:1rem;
+            border-radius: .5rem;
+            text-align: center;
+            color:wheat;
+            transition: transform 0.3s ease, background 0.3s ease;
+            
+        }
+        .card:hover{
+            background: red;
+            transform: scale(1.05)
+        }
+        .prd{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 1rem;
+            
+
+        }
+        .img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            
+            
+        }
+        .img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Responsive</h1>
+    </header>
+    <section class="prd">
+        <div class="card"> sanr phaamr 1</div>
+        <div class="card"> sanr phaamr 2</div>
+        <div class="card"> sanr phaamr 3</div>
+        <div class="card"> sanr phaamr 4</div>
+        <div class="card"> sanr phaamr 5</div>
+        <div class="card"> sanr phaamr 6</div>
+        
+    </section>
+    <div ><img class="img" src="https://tse4.mm.bing.net/th/id/OIP.Xn7vlgvT8Y2eBUhzQlgSCQHaEK?r=0&pid=Api&h=220&P=0" ></div>
+</body>
+</html>

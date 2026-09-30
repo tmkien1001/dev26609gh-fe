@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:rgb(221, 199, 199);
+            margin: 20px;
+        }
+        .container{
+            display:flex;
+            gap:20px;
+        }
+        .main-news h1{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+        }
+        .main-news h1::after{
+            content:"";
+            position: absolute;
+            left:0;
+            bottom:0;
+            width:0;
+            height:3px;
+            background: green;
+            transition: width 0.3s;
+        }
+        .main-news h1:hover::after{
+            width:100%
+
+        }
+        .main-news img{
+            width:100%;
+            max-width:600px;
+            margin:15px 0;
+            display: block;
+
+        }
+        .date{
+            color:gray;
+            font-size:14px;
+            margin-bottom: 10px;
+        }
+        .sidebar{
+            flex:1;
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+        }
+        .sidebar-item{
+            display:flex;
+            gap: 10px;
+            margin-bottom: 15PX;
+            align-items: center;
+        }
+        .sidebar-item img {
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .sidebar-item .infor {
+        flex: 1;
+        display: flex;
+        justify-content:    space-between;
+        align-items: center;
+    }
+
+    .sidebar-item .infor h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .sidebar-item .infor .date {
+        font-size: 12px;
+        color: gray;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-news">
+    <h1>TIN TỨC</h1>
+    <img src="https://img5.thuthuatphanmem.vn/uploads/2021/12/16/anh-nen-dung-cu-thi-nghiem-hoa-hoc_093816882.jpg" alt="Ảnh thí nghiệm hóa học">
+    <h2>Chế phẩm hóa học là gì? Và những điều cần lưu ý khi sử dụng</h2>
+    <div class="time">06/06/2019</div>
+    <p>
+        NaOH hay còn được gọi dưới cái tên Sodium Hydroxide, tên gọi trong hóa học là Natri Hydroxit. 
+        Các dạng của chúng: xút vảy, xút hạt, xút lỏng, xút rắn.
+    </p>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.U_ZRG3ARDTYESqF1P0RJFwHaEH?r=0&pid=Api&h=220&P=0">
+        <div class="infor"> Hóa học đằng sau pháo hóa cầm tay
+            <div class="date">05/06/2019</div>
+        </div>
+        </div>                                                      
+
+    
+    
+        <div class="sidebar-item">
+            <img src="https://khainhat.vn/wp-content/uploads/2025/09/xut-naoh-dung-trong-cong-nghiep-300x200.webp">
+            <div class="infor"> Ứng dụng của xút trong công nghiệp- xút chuẩn hàng tốt</div>
+            <div class="date">05/06/2019</div>
+        </div>
+
+
+    
+    
+        <div class="sidebar-item">
+            <img src="https://hoachathaidang.vn/upload/cdn/images/congnghiep/xut-vay-sodium-hydroxide-naoh-99-an-do-4.png">
+            <div class="infor"> Cung cấp Hóa hcatas sodium hydroxie 99%</div>
+            <div class="date">05/06/2019</div>
+        </div>
+
+    
+    
+        <div class="sidebar-item">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.gm6zPb_sq8W3suthiOz8dgHaHa?r=0&pid=Api&h=220&P=0">
+            <div class="infor"> Những mối nguy hiểm khi sử dụng</div>
+            <div class="date">05/06/2019</div>
+    </div>
+        
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --text-color:black;
+        --bg-color: white
+
+
+    }
+    body{
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+    .dark{
+        --bg-color: black;
+        --text-color:white;
+
+
+    }
+    .link{
+        position: relative;
+        text-decoration: none;
+        cursor:pointer;
+
+    }
+    .link::after{
+        content:"";
+        position: absolute;
+        left:0;
+        bottom:-15px;
+        width: 0;
+        height: 5px;
+        background: green;
+        transition: width 0.3s;
+    }
+    .link:hover::after{
+        width:100%;
+    }
+</style>
+<body>
+    <h1 class="link">Pseudo-class& Pseudo-element Nang cao</h1>
+    <p>vi du: tao underline animation bang  ::after</p>
+    <h1> css variable</h1>
+    <button onclick="document.body.classList.toggle('dark')">
+        Toogle dark mode
+    </button>
+</body>
+</html>
