@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aliceblue;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap:50px;
+        }
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: black;
+
+        }
+        .name::after{
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 45px;
+            height:3px;
+            background-color: green;
+            
+
+        }
+        .reason{
+            flex: 2;
+        }
+        .intro{
+            flex: 1;
+            font-size: 15px;
+            line-height: 1.5;
+            color: gray;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .btn{
+            display: inline-block;
+            padding: 5px 12px;
+            border:1px solid green;
+            border-radius: 4px;
+            color: green;
+            text-decoration: none;
+            transform: all 0.2s ease;
+        }
+        .btn:hover{
+            background-color: brown;
+        }
+        
+        .reasonb{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 20px;
+
+        }
+        .reason-a img{
+            width:35px;
+
+            height: 35px;
+            object-fit: contain;
+            flex-shrink: 0;
+
+        }
+        .reason-a{
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+
+
+        }
+        h4{
+            color:green;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        p{
+            color: darkcyan;
+            line-height: 1.4;
+            font-size: 11.5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h3 class="name"> GIỚI THIỆU</h3>
+            <p>
+                CÔNG TY CP GEMACHEM VIỆT NAM thành lập năm 2007. Lĩnh vực kinh doanh chính là hóa chất công nghiệp và phân bón vô cơ, 100% hàng hóa nhập khẩu chính ngạch. Thị trường trải khắp cả nước. Khách hàng là các nhà máy, các khu công nghiệp, các nông trại, trang trại, các đại lý phân bón...
+            </p>
+            <button><a href="#" class="btn">Chi tiết &gt</a> </button>
+            
+        </div>
+        <div class="reason">
+            <h3 class="name">TẠI SAO CHỌN GAMECHEM</h3>
+            <div class="reasonb">
+            <div class="reason-a">
+            <img src="https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-sticky-note-line-icon-vector-png-image_6626364.png" >
+            <div class="reason-content">
+                <h4 class="name-b">
+                    HÓA CHẤT CHÍNH HÃNG
+                </h4>
+                <p>100% hàng hóa nhập khẩu chính nghạch</p>
+            </div>
+            </div>
+
+            <div class="reason-a">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.LPlA-kxgKie4sBGalGA8QgAAAA?r=0&pid=Api&h=220&P=0">
+                <div class="reason-content">
+                <h4 class="name-b"> VẬN CHUYỂN LINH HOẠT</h4>
+                <p>Vận chuyển hàng hóa linh hoạt</p>
+                </div>
+            </div>
+            <div class="reason-a">
+            <img  src="https://tse3.mm.bing.net/th/id/OIP.btZzr2H5DBWGMEV89s-Y2AHaHa?r=0&pid=Api&h=220&P=0">
+            <div class="reason-content">
+                <h4 class="name-b">
+                    PHÂN PHỐI RỘNG KHẮP
+                </h4>
+                <p> Thị trường trải dài khắp cả nước</p>
+            </div>
+            </div>
+
+            
+
+            <div class="reason-a">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.5fG2u1FzUW9zRowBVINJ4gHaHa?r=0&pid=Api&h=220&P=0">
+            <div class="reason-content">
+                <h4 class="name-b">
+                    KHÁCH HÀNG
+                </h4>
+                <p>Khách hàng đối tác tin cậy</p>
+            </div>
+            </div>
+
+            
+
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
