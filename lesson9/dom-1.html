@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+</head>
+<body>
+
+    <!-- Tương tác qua Tag Name -->
+    <h1 onmouseover="fn_tagHTML()">Tương tác DOM</h1>
+
+    <hr>
+
+    <!-- Tương tác qua ID -->
+    <h2 id="demo">Xin chào</h2>
+
+    <!-- Tương tác qua Class -->
+    <div class="noidung">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor animi vel eos ad error eveniet esse, impedit incidunt ab quod.
+        </p>
+    </div>
+
+    <p>Nội dung 1</p>
+    <p>Nội dung 2</p>
+
+    <button onclick="fn_changeText()">Đổi nội dung H2</button>
+    <button onclick="fn_changeClass()">Đổi màu nền</button>
+    <button onclick="fn_cssSelector()">Đổi màu chữ</button>
+
+    <script>
+        // Tương tác qua ID
+        const fn_changeText = () => {
+            document.getElementById("demo").innerText =
+                "DOM tương tác thông qua thuộc tính ID";
+        };
+
+        // Tương tác qua Tag HTML
+        const fn_tagHTML = () => {
+            document.getElementsByTagName("h1")[0].innerHTML =
+                "Tương tác <span style='color:red'>DOM</span>";
+        };
+
+        // Tương tác qua Class Name
+        const fn_changeClass = () => {
+            document.getElementsByClassName("noidung")[0]
+                .style.backgroundColor = "#ffcc11";
+        };
+
+        // Tương tác qua CSS Selector
+        const fn_cssSelector = () => {
+            document.querySelectorAll("div p")[0]
+                .style.color = "blue";
+        };
+    </script>
+
+</body>
+</html>
