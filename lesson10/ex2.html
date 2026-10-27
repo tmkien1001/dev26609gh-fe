@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM thao tac voi phan tu HTML</h1>
+    <h3> VI DU:thay doi anh</h3>
+    <div id="img">
+        <img id="myimg" src="https://i.pinimg.com/originals/0d/de/2f/0dde2f569c75a4fb4563403124e432f1.jpg" width="200">
+        
+    </div>
+    <button onclick="changeImage()"> Doi anh</button>
+    <script>
+        function changeImage(){
+            document.getElementById("myimg").src="https://spicyfoodstudio.com/wp-content/uploads/2023/05/anh-do-an-vat-tu-chup-06.jpg";
+        }
+    </script>
+</body>
+</html>

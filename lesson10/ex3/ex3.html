@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex3.css">
+    
+</head>
+<body>
+    <h1>DOM:Lay va thay doi thuoc tinh value</h1>
+    <form name="frm" action="" method="post">
+        <h1>Thong tin</h1>
+        <div>
+            <label for="txtName">Name </label>
+            <input type="text" id="txtname" placeholder="Nhap ten ....">
+
+        </div>
+        <div>
+            <label>Gioi tinh</label>
+            <div>
+                <input type="radio" name="gioitinh" id="gtnam" value="nam" checked>
+                <label for="gtnam"> Nam</label>
+                <input type="radio" id="gtnu" value="Nu" name="gioitinh" >
+                <label for="gtnu">Nu</label>
+                <input type="radio" id="gtkhac" value="khac" name="gioitinh" >
+                <label for="gtkhac">Khac</label>
+            </div>
+        </div>
+        <div>
+            <label>So thich </label>
+            <div>
+                <input type="checkbox" name="sothich" id="bongda" value="Bong">
+                <label for="bongda">Bong da</label>
+                <input type="checkbox" name="sothich" id="boi" value="boiloi">
+                <label for="boi">Boi loi</label>
+                <input type="checkbox" name="sothich" id="bongchuyen" value="bong chuyen">
+                <label for="bongchuyen">Bong chuyen</label>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="return getData();"> Lay thong tin</button>
+            <button>Thay doi ten</button>
+        </div>
+
+    </form>
+    <div id="ketqua"></div>
+    <script src="ex3.js"></script>
+</body>
+</html>
